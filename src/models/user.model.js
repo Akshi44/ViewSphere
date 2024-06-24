@@ -9,7 +9,7 @@ const userSchema = new  mongoose.Schema(
             lowercase:true,
             unique:true,
             trim:true,
-            index:true,                //to make searchable 
+            index:true,                    //to make searchable 
         },
         email:{
             type:String,
@@ -25,11 +25,11 @@ const userSchema = new  mongoose.Schema(
             index:true,
         },
         avatar:{
-            type:String,    //using cloudinary url
+            type:String,         //using cloudinary url
             required:true,
         },
         coverImage:{
-            type:String,    //using cloudinary url
+            type:String,         //using cloudinary url
         },
         password:{
             type:String,
@@ -62,14 +62,14 @@ userSchema.pre("save",async function(next){
 // To check the password correction before validate, this method will be used in login page logic to check the correctness of the password
 // return true/false
 userSchema.methods.isPasswordCorrect = async function(password){
-    return await bcrypt.compare(password,this.password)      //curr,already saved
+    return await bcrypt.compare(password,this.password)                //curr,already saved
 }
 
 // JWT 
 
 // Generate access token (web token)
 userSchema.methods.generateAccessToken = function(){
-    return jwt.sign(
+    return JsonWebToken.sign(
         {
             //payload
             _id:this._id,
@@ -86,7 +86,7 @@ userSchema.methods.generateAccessToken = function(){
 
 // Generate refresh token (web token)
 userSchema.methods.generateRefreshToken = async function(){
-    return jwt.sign(
+    return JsonWebToken.sign(
         {
             //payload
             _id:this._id,
