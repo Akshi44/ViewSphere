@@ -17,4 +17,15 @@ app.use(express.static("public"))    //for local assests
 
 app.use(cookieParser())   // for secure cookies on server
 
+//routes import
+import userRouter from './routes/user.routes.js' 
+
+
+//routes declaration
+// As we seperated controllers and routers so standard practice is to use middleware , hence "use" method.
+
+// http://localhost:8000/api/v1/users/register
+app.use("/api/v1/users",userRouter)
+
+
 export{app}
