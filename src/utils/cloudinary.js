@@ -1,5 +1,5 @@
 import {v2 as cloudinary} from "cloudinary"
-import fs from  fs                       // file system 
+import fs from "fs"                       // file system 
 
 // Configuration
 cloudinary.config({ 
@@ -15,8 +15,9 @@ const uplaodOnCloudinary = async (localFilePath)=>{
         const response = await cloudinary.uploader.upload(localFilePath,{resource_type:"auto"})
         // File has been uploaded successfully
         console.log("File has been uploaded successfully")
-        console.log(response)
-        console.log(response.url)
+        // console.log(response)
+        // console.log(response.url)
+        fs.unlinkSync(localFilePath)
         return response
     }catch(error){
         // File is not uploaded on server, but fetched in  local server, hence this will create unecessary load on local server, so unlink(remove) the file from local server and return fail message 
