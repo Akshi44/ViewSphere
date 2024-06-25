@@ -1,5 +1,5 @@
 import mongoose  from "mongoose";
-import JsonWebToken from "jsonwebtoken";   // While authentication
+import jwt from "jsonwebtoken";   // While authentication
 import bcrypt from "bcrypt"                // Before password saving
 const userSchema = new  mongoose.Schema(
     {
@@ -69,7 +69,8 @@ userSchema.methods.isPasswordCorrect = async function(password){
 
 // Generate access token (web token)
 userSchema.methods.generateAccessToken = function(){
-    return JsonWebToken.sign(
+    // console.log(`ACCESS_TOKEN_SECRET: ${process.env.ACCESS_TOKEN_SECRET}`);
+    return jwt.sign(
         {
             //payload
             _id:this._id,
@@ -79,25 +80,23 @@ userSchema.methods.generateAccessToken = function(){
         },
         process.env.ACCESS_TOKEN_SECRET,
         {
-            expiresIn:ACCESS_TOKEN_EXPIRY
+            expiresIn:process.env.ACCESS_TOKEN_EXPIRY
         }
-    )
-}
+    );
+};
 
 // Generate refresh token (web token)
 userSchema.methods.generateRefreshToken = async function(){
-    return JsonWebToken.sign(
+    return jwt.sign(
         {
             //payload
             _id:this._id,
-            email:this.email,
-            username:this.username,
-            fullname:this.fullname,
         },
         process.env.REFRESH_TOKEN_SECRET,
         {
-            expiresIn:REFRESH_TOKEN_EXPIRY
+            expiresIn:process.env.REFRESH_TOKEN_EXPIRY
         }
     )
 }
 export const User = mongoose.model("User",userSchema)
+

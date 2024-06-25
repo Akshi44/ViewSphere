@@ -6,7 +6,7 @@
 
 
 class ApiResponse{
-    construstor(
+    constructor(
         statusCode,
         data,
         message="Success"
