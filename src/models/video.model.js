@@ -11,7 +11,7 @@ const videoSchema = new  mongoose.Schema(
             type:String,
             required:true,
         },
-        owner:{
+        owner:{               //channel
             type:mongoose.Schema.Types.ObjectId,
             ref:"User",
         },

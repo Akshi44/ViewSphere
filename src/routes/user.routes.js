@@ -1,5 +1,5 @@
 import {Router} from "express"
-import { loginUser, registerUser, logoutUser,refereshAccessToken,changeCurrentPassword  } from "../controllers/user.controller.js"
+import { loginUser, registerUser, logoutUser,refreshAccessToken,changeCurrentPassword,getCurrentUser, updateAccountDetails,updateUserAvatar, updateUserCoverImage, getUserChannelProfile, getWatchHistory } from "../controllers/user.controller.js"
 
 import { upload } from "../middlewares/multer.middleware.js";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
@@ -24,14 +24,18 @@ router.route("/register").post(
 router.route("/login").post(loginUser);
 
 //secure route
+// verifyJWT: to check user should be logged in
 router.route("/logout").post(verifyJWT,logoutUser);
-router.route("/refresh-token").post(refereshAccessToken );
-router.route("/change-password").post(changeCurrentPassword );
-
+router.route("/refresh-token").post(refreshAccessToken );
+router.route("/change-password").post(verifyJWT,changeCurrentPassword );
+router.route("/current-user").post(verifyJWT,getCurrentUser);
+router.route("/update-account").patch(verifyJWT,updateAccountDetails);     //patch, otherwise all details will update
+router.route("/avatar").patch(verifyJWT,upload.single("avatar"),updateUserAvatar);    //patch, otherwise all details will update
+router.route("/cover-image").patch(verifyJWT,upload.single("coverImage"),updateUserCoverImage); //patch, otherwise all details will update
+router.route("/c/:username").get(verifyJWT,getUserChannelProfile); 
+router.route("/watch-history").get(verifyJWT,getWatchHistory); 
 
 export default router
-
-
 
 /*
 export default router:
