@@ -5,7 +5,6 @@ import {uplaodOnCloudinary} from '../utils/cloudinary.js'
 import { ApiResponse } from "../utils/ApiResponse.js";
 import jwt from "jsonwebtoken";
 import mongoose from "mongoose";
-import { Avatar } from "@material-ui/core";
 
 //method for access and refresh token
 const generateAccessAndRefereshTokens = async(userId) =>{
