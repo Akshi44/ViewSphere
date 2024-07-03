@@ -5,7 +5,8 @@ import {createPlaylist,
     removeVideoFromPlaylist, 
     getPlaylistById, 
     deletePlaylist, 
-    updatePlaylist} from '../controllers/tweet.controller.js'
+    updatePlaylist,
+    getVideoSavePlaylists} from '../controllers/playlist.controller.js'
 
 import {verifyJWT} from '../middlewares/auth.middleware.js'
 
@@ -19,7 +20,9 @@ router.route("/:playlistId").get(getPlaylistById).patch(updatePlaylist).delete(d
 router.route("/add/:videoId/:playlistId").patch(addVideoToPlaylist)
 router.route("/remove/:videoId/:playlistId").patch(removeVideoFromPlaylist)
 
-router.route("/user/:userId").get(getUserPlaylists)
+router.route("/users/:userId").get(getUserPlaylists)
+
+router.route("user/playlists/:videoId").get(getVideoSavePlaylists)
 
 
 

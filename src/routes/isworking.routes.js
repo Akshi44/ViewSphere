@@ -1,5 +1,5 @@
 import {Router} from "express";
-import {isWorking} from "../controllers/like.controller.js"
+import {isWorking} from "../controllers/isworking.controller.js"
 
 const router = Router()
 
