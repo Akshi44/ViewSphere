@@ -15,6 +15,7 @@ app.use(express.json({limit:"20kb"}))   // for json limit, and to do not allow u
 app.use(express.urlencoded({extended:true,limit:'20kb'}))   // to read the url correctly
 app.use(express.static("public"))    //for local assests
 app.use(cookieParser())   // for secure cookies on server
+app.use(morgan("dev"))  // Middleware for logging HTTP requests in this Express application. 
 
 //routes import
 import userRouter from './routes/user.routes.js' 
@@ -26,6 +27,7 @@ import commentRouter from './routes/comment.routes.js'
 import tweetRouter from './routes/tweet.routes.js'
 import dashboardRouter from './routes/dashboard.routes.js'
 import isworkingRouter from './routes/isworking.routes.js'
+import morgan from "morgan"
 
 
 //routes declaration
