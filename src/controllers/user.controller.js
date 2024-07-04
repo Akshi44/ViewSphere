@@ -466,6 +466,24 @@ const getWatchHistory = asyncHandler(async(req,res)=>{
             .json(new ApiResponse(200,user[0].watchHistory,"watch history fetched successfully"))
 })
 
+const clearWatchHistory = asyncHandler(async(req,res)=>{
+    const isCleared = await User.findByIdAndUpdate(
+        new mongoose.Types.ObjectId(req.user?._id),
+        {
+          $set: {
+            watchHistory: [],
+          },
+        },
+        {
+          new: true,
+        }
+      );
+      if (!isCleared) throw new ApiError(500, "Failed to clear history");
+      return res
+        .status(200)
+        .json(new ApiResponse(200, [], "History Cleared Successfully"));
+})
+
 export {registerUser,
         loginUser , 
         logoutUser,
@@ -476,5 +494,6 @@ export {registerUser,
         updateUserAvatar, 
         updateUserCoverImage,
         getUserChannelProfile,
-        getWatchHistory 
+        getWatchHistory,
+        clearWatchHistory
      }

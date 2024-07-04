@@ -9,20 +9,23 @@ import {createPlaylist,
     getVideoSavePlaylists} from '../controllers/playlist.controller.js'
 
 import {verifyJWT} from '../middlewares/auth.middleware.js'
+import { userCheck } from "../middlewares/routeAuth.middleware.js";
 
 const router = Router()
 
-router.use(verifyJWT);
+// router.use(verifyJWT);
 
-router.route("/").post(createPlaylist)
+router.route("/").post(verifyJWT,createPlaylist)
 
-router.route("/:playlistId").get(getPlaylistById).patch(updatePlaylist).delete(deletePlaylist)
-router.route("/add/:videoId/:playlistId").patch(addVideoToPlaylist)
-router.route("/remove/:videoId/:playlistId").patch(removeVideoFromPlaylist)
+router.route("/add/:playlistId/:videoId").patch(verifyJWT,addVideoToPlaylist)
 
-router.route("/users/:userId").get(getUserPlaylists)
+router.route("/remove/:playlistId/:videoId").patch(verifyJWT,removeVideoFromPlaylist)
 
-router.route("user/playlists/:videoId").get(getVideoSavePlaylists)
+router.route("/:playlistId").get(userCheck,getPlaylistById).patch(verifyJWT,updatePlaylist).delete(verifyJWT,deletePlaylist)
+
+router.route("/users/:userId").get(userCheck,getUserPlaylists)
+
+router.route("user/playlists/:videoId").get(verifyJWT,getVideoSavePlaylists)
 
 
 

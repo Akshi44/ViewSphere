@@ -7,7 +7,7 @@ const router = Router()
 
 // router.use(verifyJWT);
 
-router.route("/:channelId").get(verifyJWT,getSubscribedChannels).patch(userCheck,toggleSubscription)
+router.route("/:channelId").get(userCheck,getSubscribedChannels).patch(verifyJWT,toggleSubscription)
 router.route("/users/:subscriberId").get(userCheck,getUserChannelSubscribers)
 
 export default router
