@@ -7,7 +7,7 @@ import { User } from "../models/user.model.js";
 export const getAboutChannel = asyncHandler(async (req, res) => {
   const { userId } = req.params;
   if (!isValidObjectId(userId)) throw new ApiError(400, "Invalid userId");
-
+  
   const aboutChannel = await User.aggregate([
     {
       $match: {
