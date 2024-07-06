@@ -2,7 +2,7 @@ import mongoose  from "mongoose";
 import jwt from "jsonwebtoken";   // While authentication
 import bcrypt from "bcrypt"                // Before password saving
 
-const linkSchema = new Schema({
+const linkSchema = new mongoose.Schema({
     name: {
       type: String,
       require: true,
@@ -13,7 +13,7 @@ const linkSchema = new Schema({
     },
   });
   
-  const watchHistorySchema = new Schema(
+  const watchHistorySchema = new mongoose.Schema(
     {
       video: {
         type: mongoose.Schema.Types.ObjectId,
