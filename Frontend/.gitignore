@@ -25,7 +25,7 @@ dist-ssr
 
 # Personal Abstraction 
 # Ignore Vite configuration file
-.vite.config.js
+vite.config.js
 
 # Ignore Axios utility file
 axios.js
