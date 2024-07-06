@@ -4,7 +4,7 @@ import { ApiResponse } from "../utils/ApiResponse.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { User } from "../models/user.model.js";
 
-export const getAboutChannel = asyncHandler(async (req, res) => {
+const getAboutChannel = asyncHandler(async (req, res) => {
   const { userId } = req.params;
   if (!isValidObjectId(userId)) throw new ApiError(400, "Invalid userId");
   
@@ -94,7 +94,7 @@ export const getAboutChannel = asyncHandler(async (req, res) => {
     );
 });
 
-export const addChannelDescription = asyncHandler(async (req, res) => {
+const addChannelDescription = asyncHandler(async (req, res) => {
   const { content } = req.body;
 
   const description = await User.findByIdAndUpdate(
@@ -114,7 +114,7 @@ export const addChannelDescription = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, description, "Description added successfully"));
 });
 
-export const addLink = asyncHandler(async (req, res) => {
+const addLink = asyncHandler(async (req, res) => {
   const { name, url } = req.body;
 
   if (!name || !url) throw new ApiError(400, "all fields required");
@@ -137,7 +137,7 @@ export const addLink = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, links, "links added successfully"));
 });
 
-export const removeLink = asyncHandler(async (req, res) => {
+const removeLink = asyncHandler(async (req, res) => {
   const { linkId } = req.params;
 
   if (!isValidObjectId(linkId)) throw new ApiError(400, "Invalid linkId");
@@ -154,7 +154,7 @@ export const removeLink = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, [], "links removed successfully"));
 });
 
-export const updateLink = asyncHandler(async (req, res) => {
+const updateLink = asyncHandler(async (req, res) => {
   const { name, url } = req.body;
   const { linkId } = req.params;
 
@@ -173,3 +173,11 @@ export const updateLink = asyncHandler(async (req, res) => {
     .status(200)
     .json(new ApiResponse(200, result, "links updated successfully"));
 });
+
+export {
+  getAboutChannel ,
+  addChannelDescription ,
+  addLink,
+  removeLink ,
+  updateLink
+}

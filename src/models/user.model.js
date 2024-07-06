@@ -1,6 +1,28 @@
 import mongoose  from "mongoose";
 import jwt from "jsonwebtoken";   // While authentication
 import bcrypt from "bcrypt"                // Before password saving
+
+const linkSchema = new Schema({
+    name: {
+      type: String,
+      require: true,
+    },
+    url: {
+      type: String,
+      require: true,
+    },
+  });
+  
+  const watchHistorySchema = new Schema(
+    {
+      video: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Video",
+      },
+    },
+    { timestamps: true }
+  );
+  
 const userSchema = new  mongoose.Schema(
     {
         username:{
@@ -36,15 +58,20 @@ const userSchema = new  mongoose.Schema(
             required:[true,"Password is required"],
 
         },
-        watchHistory:[
-            {
-                type:mongoose.Schema.Types.ObjectId,
-                ref:"Video"
-            },
-        ],
+        description: {
+            type: String,
+            default: "",
+        },
+        links: [linkSchema],
         refreshToken:{
             type:String,
-        }
+        },
+        watchHistory: [
+            {
+              type: mongoose.Schema.Types.ObjectId,
+              ref: "Video",
+            },
+        ],
 
     },{timestamps:true}
 )
