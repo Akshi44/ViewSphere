@@ -22,10 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Personal Abstraction 
-# Ignore Vite configuration file
-vite.config.js
-
-# Ignore Axios utility file
-axios.js
