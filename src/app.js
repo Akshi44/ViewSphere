@@ -6,11 +6,26 @@ import morgan from "morgan"
 const app = express()
 
 // app.use for middlewares, cors, cookies
+// prev 
+// app.use(cors({
+//     origin:process.env.CORS_ORIGIN,
+//     credentials:true,
+// }))   
 
-app.use(cors({
-    origin:process.env.CORS_ORIGIN,
-    credentials:true,
-}))   
+// leter 
+const allowedOrigins = process.env.CORS_ORIGIN.split(',');
+const corsOptions = {
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+};
+app.use(cors(corsOptions));
 
 app.use(express.json({limit:"20kb"}))   // for json limit, and to do not allow unlimited json from the out resources
 app.use(express.urlencoded({extended:true,limit:'20kb'}))   // to read the url correctly
