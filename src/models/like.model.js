@@ -3,6 +3,10 @@ import mongoose  from "mongoose";
 const likeSchema = new  mongoose.Schema(
     {
         // User can like the video, tweet and comment. Hence -
+        liked: {
+            type: Boolean,
+            default: true,
+        },
         video:{           
             type:mongoose.Schema.Types.ObjectId,
             ref:"Video",
