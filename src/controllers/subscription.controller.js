@@ -82,7 +82,7 @@ const getUserChannelSubscribers = asyncHandler(async(req,res)=>{
               $project: {
                 username: 1,
                 avatar: 1,
-                fullName: 1,
+                fullname: 1,
                 subscribersCount: {
                   $size: "$subscribersSubscribers",
                 },
@@ -152,7 +152,7 @@ const getSubscribedChannels = asyncHandler(async(req,res)=>{
           pipeline: [
             {
               $project: {
-                fullName: 1,
+                fullname: 1,
                 username: 1,
                 avatar: 1,
               },

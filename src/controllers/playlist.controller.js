@@ -49,7 +49,7 @@ const getUserPlaylists = asyncHandler(async (req, res) => {
         pipeline: [
           {
             $project: {
-              fullName: 1,
+              fullname: 1,
               avatar: 1,
               username: 1,
               views: 1,
@@ -135,7 +135,7 @@ const getPlaylistById = asyncHandler(async (req, res) => {
                 {
                   $project: {
                     username: 1,
-                    fullName: 1,
+                    fullname: 1,
                     avatar: 1,
                   },
                 },
@@ -162,7 +162,7 @@ const getPlaylistById = asyncHandler(async (req, res) => {
           {
             $project: {
               username: 1,
-              fullName: 1,
+              fullname: 1,
               avatar: 1,
             },
           },
