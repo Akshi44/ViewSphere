@@ -4,8 +4,8 @@ import { updateProfile } from "../../app/Slices/authSlice";
 
 function EditPersonalInfo({ userData }) {
   const defaultValues = {
-    firstname: (userData?.fullName.split(" ", 2))[0] || "",
-    lastname: (userData?.fullName.split(" ", 2))[1] || "",
+    firstname: (userData?.fullname.split(" ", 2))[0] || "",
+    lastname: (userData?.fullname.split(" ", 2))[1] || "",
     email: userData?.email || "",
   };
 
@@ -14,7 +14,7 @@ function EditPersonalInfo({ userData }) {
 
   const handleSaveChange = (event) => {
     event.preventDefault();
-    const formData = { fullName: data.firstname + " " + data.lastname, email: data.email };
+    const formData = { fullname: data.firstname + " " + data.lastname, email: data.email };
     dispatch(updateProfile(formData)).then((res) => {
     });
   };
@@ -114,7 +114,7 @@ function EditPersonalInfo({ userData }) {
             <button
               type="submit"
               disabled={data == defaultValues}
-              className="inline-block bg-[#316337] px-3 py-1.5 text-black disabled:cursor-not-allowed"
+              className="inline-block bg-[#51AF30] px-3 py-1.5 text-black disabled:cursor-not-allowed"
             >
               Save changes
             </button>

@@ -53,7 +53,7 @@ function FeedTweets({ owner = false }) {
             <div className="w-20 h-10 bg-slate-100/20 rounded animate-pulse"></div>
           </div>
         </div>
-        <hr className=" border-[#316337]/80 animate-pulse mt-4 mb-4" />
+        <hr className=" border-[#51AF30]/80 animate-pulse mt-4 mb-4" />
         <div className=" px-1">
           <div className="flex justify-between ">
             {/* comment content */}
@@ -265,7 +265,7 @@ function FeedTweets({ owner = false }) {
 
           <div className="flex items-center justify-end gap-x-3 px-3">
             {/* Emoji button */}
-            {/* <button type="button" className="inline-block h-5 w-5 hover:text-[#316337]"></button> */}
+            {/* <button type="button" className="inline-block h-5 w-5 hover:text-[#51AF30]"></button> */}
             {/* Cancel button */}
             <button
               type="button"
@@ -275,13 +275,13 @@ function FeedTweets({ owner = false }) {
               cancel
             </button>
             {/* send button */}
-            <button type="submit" className="bg-[#316337] px-3 py-2 font-semibold text-black">
+            <button type="submit" className="bg-[#51AF30] px-3 py-2 font-semibold text-black">
               Send
             </button>
           </div>
         </form>
 
-        <hr className=" border-[#316337] mt-6 mb-4" />
+        <hr className=" border-[#51AF30] mt-6 mb-4" />
 
         {tweets?.length > 0 ? (
           <ul>

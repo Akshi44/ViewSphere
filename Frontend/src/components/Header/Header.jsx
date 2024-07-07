@@ -82,7 +82,7 @@ function Header() {
           <div className="relative w-full max-w-lg overflow-hidden">
             <input
               ref={searchInputRef}
-              className="w-full border focus:border-[#316337] bg-transparent py-1 pl-8 pr-3 placeholder-white outline-none sm:py-2"
+              className="w-full border focus:border-[#51AF30] rounded-l-xl bg-transparent py-1 pl-8 pr-3 placeholder-white outline-none sm:py-2"
               placeholder="Search"
             />
             <span className="absolute left-2.5 top-1/2 inline-block -translate-y-1/2">
@@ -105,7 +105,7 @@ function Header() {
           </div>
           <button
             type="submit"
-            className=" border-r border-b border-t rounded-r-xl px-3 py-1 bg-transparent hover:text-[#316337] hover:bg-gray-500/10"
+            className=" border-r border-b border-t rounded-r-xl px-3 py-1 bg-transparent hover:text-[#51AF30] hover:bg-gray-500/10"
           >
             <div className=" size-6 sm:size-8 flex items-center ">
               <svg
@@ -138,12 +138,12 @@ function Header() {
           <div className="relative w-full max-w-lg overflow-hidden">
             <input
               ref={smallSearchInputRef}
-              className="w-full border rounded-r-2xl focus:border-[#316337] bg-transparent py-1 pl-2 pr-3 placeholder-white outline-none"
+              className="w-full border rounded-r-2xl focus:border-[#51AF30] bg-transparent py-1 pl-2 pr-3 placeholder-white outline-none"
               placeholder="Search"
             />
             <button
               type="submit"
-              className="absolute right-2 hover:text-[#316337] top-1/2 inline-block -translate-y-1/2"
+              className="absolute right-2 hover:text-[#51AF30] top-1/2 inline-block -translate-y-1/2"
             >
               {icons.search}
             </button>
@@ -155,9 +155,9 @@ function Header() {
 
         {/* Hamburger Menu Style*/}
         <button className="group peer ml-4 flex w-6 shrink-0 flex-wrap gap-y-1.5 sm:hidden">
-          <span className="block h-[2px] w-full bg-white group-hover:bg-[#316337]"></span>
-          <span className="block h-[2px] w-2/3 bg-white group-hover:bg-[#316337]"></span>
-          <span className="block h-[2px] w-full bg-white group-hover:bg-[#316337]"></span>
+          <span className="block h-[2px] w-full bg-white group-hover:bg-[#51AF30]"></span>
+          <span className="block h-[2px] w-2/3 bg-white group-hover:bg-[#51AF30]"></span>
+          <span className="block h-[2px] w-full bg-white group-hover:bg-[#51AF30]"></span>
         </button>
 
         {/* Responsive Mobile View list */}
@@ -182,7 +182,7 @@ function Header() {
               </svg>
             </button> */}
           </div>
-          <ul className="my-4 flex w-full flex-wrap gap-2 px-4 sm:hidden">
+          <ul className="my-4 flex w-full flex-wrap gap-2 px-4 sm:hidden ">
             {HamburgerMenu.map((item) => (
               <li key={item.route} className={`${item.className} w-full`}>
                 <NavLink
@@ -191,12 +191,12 @@ function Header() {
                   end
                   className={({ isActive }) =>
                     `${
-                      isActive && "text-[#316337] sm:bg-[#316337] sm:text-black"
-                    } flex flex-col items-center justify-center border-white py-1 focus:text-[#316337] sm:w-full sm:flex-row sm:border sm:p-1.5 sm:hover:bg-[#316337] sm:hover:text-white sm:focus:border-[#316337] sm:focus:bg-[#316337] sm:focus:text-black  lg:px-4`
+                      isActive && "text-[#51AF30] sm:bg-[#51AF30] sm:text-black"
+                    } flex flex-col items-center justify-center border-white py-1 focus:text-[#51AF30] sm:w-full sm:flex-row sm:border sm:p-1.5 sm:hover:bg-[#51AF30] sm:hover:text-white sm:focus:border-[#51AF30] sm:focus:bg-[#51AF30] sm:focus:text-black  lg:px-4`
                   }
                 >
-                  <button className="flex w-full items-center justify-start gap-x-4 border border-white px-4 py-1.5 text-left hover:bg-[#316337] hover:text-black focus:border-[#316337] focus:bg-[#316337] focus:text-black">
-                    <span className="inline-block w-full max-w-[20px] group-hover:mr-4 lg:mr-4">
+                  <button className="flex w-full items-center justify-start gap-x-4 border border-white px-4 py-1.5 text-left hover:bg-[#51AF30] hover:text-black focus:border-[#51AF30] focus:bg-[#51AF30] focus:text-black rounded-full">
+                    <span className="inline-block w-full max-w-[20px] group-hover:mr-4 lg:mr-4 ">
                       {item.icon}
                     </span>
                     <span>{item.name}</span>
@@ -220,7 +220,7 @@ function Header() {
                     className="h-16 w-16 shrink-0 rounded-full sm:h-12 sm:w-12"
                   />
                   <div className="w-full pt-2 sm:hidden">
-                    <h6 className="font-semibold">{userData.fullName}</h6>
+                    <h6 className="font-semibold">{userData.fullname}</h6>
                     <p className="text-sm text-gray-300">@{userData.username}</p>
                   </div>
                 </Link>
@@ -229,15 +229,15 @@ function Header() {
           ) : (
             <div className="mb-8 mt-auto flex w-full flex-wrap gap-4 px-4 sm:mb-0 sm:mt-0 sm:items-center sm:px-0">
               <Link to={"/login"}>
-                <button className="w-full bg-[#383737] px-3 py-2 hover:bg-[#4f4e4e] sm:w-auto sm:bg-transparent">
+                <button className="mr-1 w-full bg-[#51AF30] px-3 py-2 text-center font-bold text-black shadow-[3px_3px_0px_0px_#E1F2DB] rounded transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto">
                   Log in
                 </button>
               </Link>
               <Link to={"/signup"}>
-                <button className="mr-1 w-full bg-[#316337] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto">
+                <button className="mr-1 w-full bg-[#51AF30] px-3 py-2 text-center font-bold text-black shadow-[3px_3px_0px_0px_#E1F2DB] rounded transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto">
                   Sign up
                 </button>
-              </Link>
+              </Link>  
             </div>
           )}
         </div>
@@ -276,7 +276,7 @@ export default Header;
       </svg>
     </span>
   </div>
-  <button className=" border-r border-b border-t rounded-r-xl px-3 py-1 bg-transparent text-[#316337] hover:bg-white/10 hover:text-[#316337]">
+  <button className=" border-r border-b border-t rounded-r-xl px-3 py-1 bg-transparent text-[#51AF30] hover:bg-white/10 hover:text-[#51AF30]">
     <div className=" size-6 sm:size-8 flex items-center ">
       <svg
         xmlns="http://www.w3.org/2000/svg"

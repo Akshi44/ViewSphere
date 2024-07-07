@@ -136,7 +136,7 @@ function Comments({ videoId, ownerAvatar }) {
             </button>
             <button
               type="submit"
-              className="rounded-3xl bg-[#316337] disabled:bg-gray-800 hover:bg-[#b48ef1] text-sm text-black font-semibold border border-b-white px-2 pb-1"
+              className="rounded-3xl bg-[#51AF30] disabled:bg-gray-800 hover:bg-[#b48ef1] text-sm text-black font-semibold border border-b-white px-2 pb-1"
             >
               Comment
             </button>

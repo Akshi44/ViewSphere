@@ -112,7 +112,7 @@ function ChannelPlaylist({ owner = false }) {
               {/* <span className="font-semibold text-3xl">{playlists?.length + ` Playlists`}</span> */}
               <button
                 onClick={popupPlaylistForm}
-                className="mt-4 rounded inline-flex items-center gap-x-2 bg-[#316337] hover:bg-[#316337]/95 border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
+                className="mt-4 rounded inline-flex items-center gap-x-2 bg-[#51AF30] hover:bg-[#51AF30]/95 border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
               >
                 {icons.plus}
                 New Playlist

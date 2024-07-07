@@ -32,7 +32,7 @@ function MyChannel() {
             <img src={profile?.avatar} alt="Channel" className="h-full w-full" />
           </span>
           <div className="mr-auto inline-block">
-            <h1 className="font-bolg text-xl">{profile?.fullName}</h1>
+            <h1 className="font-bolg text-xl">{profile?.fullname}</h1>
             <p className="text-sm text-gray-400">@{profile?.username}</p>
             <p className="text-sm text-gray-400">
               {profile?.subscribersCount} Subscribers · {profile.channelsSubscribedToCount}{" "}
@@ -42,7 +42,7 @@ function MyChannel() {
           <div className="inline-block">
             <button
               onClick={() => navigate("/settings")}
-              className="group/btn mr-1 flex w-full items-center gap-x-2 bg-[#316337] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto"
+              className="group/btn mr-1 flex w-full items-center gap-x-2 bg-[#51AF30] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto"
             >
               <span className="inline-block w-5">
                 <svg
@@ -68,7 +68,7 @@ function MyChannel() {
         <ul className="no-scrollbar sticky top-[66px] z-[2] flex flex-row gap-x-2 overflow-auto border-b-2 border-gray-400 bg-[#121212] py-2 sm:top-[82px]">
           <li className="w-full">
             <NavLink to={""}>
-              <button className="w-full border-b-2 border-[#316337] bg-white px-3 py-1.5 text-[#316337]">
+              <button className="w-full border-b-2 border-[#51AF30] bg-white px-3 py-1.5 text-[#51AF30]">
                 Videos
               </button>
             </NavLink>

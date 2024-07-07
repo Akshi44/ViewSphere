@@ -35,7 +35,7 @@ function SubscriptionUser({ profile }) {
           </div>
           <div className="block">
             <h6 className="font-semibold">
-              <Link to={`/user/${profile.username}`}>{profile.fullName}</Link>
+              <Link to={`/user/${profile.username}`}>{profile.fullname}</Link>
             </h6>
             <p className="text-sm text-gray-300">{formatSubscription(profile.subscribersCount)}</p>
           </div>
@@ -43,7 +43,7 @@ function SubscriptionUser({ profile }) {
         <div className="block">
           <button
             onClick={handleToggleSubscription}
-            className={`px-3 py-2 text-black ${isSubscribed ? "bg-[#316337]" : "bg-white"} `}
+            className={`px-3 py-2 text-black ${isSubscribed ? "bg-[#51AF30]" : "bg-white"} `}
           >
             <span>{isSubscribed ? "Subscribed" : "Subscribe"}</span>
           </button>

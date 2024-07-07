@@ -6,7 +6,7 @@ function EmptyVideo() {
       <div className="flex h-full items-center justify-center">
         <div className="w-full max-w-sm text-center">
           <p className="mb-3 w-full">
-            <span className="inline-flex rounded-full bg-[#c7f2ce] p-2 text-[#316337]">
+            <span className="inline-flex rounded-full bg-[#c7f2ce] p-2 text-[#51AF30]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

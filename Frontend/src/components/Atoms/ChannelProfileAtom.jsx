@@ -26,7 +26,7 @@ function ChannelProfileAtom({ profile, owner = false }) {
         <img src={profile?.avatar} alt="Channel" className="h-full w-full" />
       </span>
       <div className="mr-auto inline-block">
-        <h1 className="font-bolg text-xl">{profile?.fullName}</h1>
+        <h1 className="font-bolg text-xl">{profile?.fullname}</h1>
         <p className="text-sm text-gray-400">@{profile?.username}</p>
         <p className="text-sm text-gray-400">
           {formatSubscription(profile?.subscribersCount)} · {profile.channelsSubscribedToCount}{" "}
@@ -38,7 +38,7 @@ function ChannelProfileAtom({ profile, owner = false }) {
         {owner ? (
           <button
             onClick={() => navigate("/settings")}
-            className="group/btn mr-1 flex w-full items-center gap-x-2 bg-[#316337] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto"
+            className="group/btn mr-1 flex w-full items-center gap-x-2 bg-[#51AF30] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto"
           >
             <span className="inline-block w-5">
               <svg
@@ -62,7 +62,7 @@ function ChannelProfileAtom({ profile, owner = false }) {
           <button
             onClick={handleClick}
             className={`${
-              isSubscribed ? "bg-[#316337]" : "bg-white"
+              isSubscribed ? "bg-[#51AF30]" : "bg-white"
             } group/btn mr-1 flex w-full items-center gap-x-2 px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto`}
           >
             <span className="inline-block w-5">

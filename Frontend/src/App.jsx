@@ -31,7 +31,7 @@ function App() {
         <div className="flex flex-col items-center justify-center mt-64">
           <img src={thin_loading} className="logo w-24" alt="Loading..." />
           <h1 className="text-3xl text-center mt-8 font-semibold">Please wait...</h1>
-          <h1 className="text-xl text-center mt-4">Refresh the page if it takes too long</h1>
+          <h1 className="text-xl text-center mt-4">Try refreshing the page once, If it takes too long</h1>
         </div>
       </div>
     );

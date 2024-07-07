@@ -102,7 +102,7 @@ function EditChannelInfo({ userData }) {
             <button
               type="submit"
               disabled={data == defaultValues}
-              className="inline-block bg-[#316337] px-3 py-1.5 text-black disabled:cursor-not-allowed"
+              className="inline-block bg-[#51AF30] px-3 py-1.5 text-black disabled:cursor-not-allowed"
             >
               Save changes
             </button>
@@ -147,7 +147,7 @@ function EditChannelInfo({ userData }) {
                 </div>
                 <button
                   type="submit"
-                  className=" px-4 rounded-sm mb-1 ml-3 bg-[#316337] text-black border border-transparent hover:border-dotted hover:border-white"
+                  className=" px-4 rounded-sm mb-1 ml-3 bg-[#51AF30] text-black border border-transparent hover:border-dotted hover:border-white"
                 >
                   {userData?.links?.length > 0 ? "Update" : "Add"}
                 </button>
@@ -185,7 +185,7 @@ function EditChannelInfo({ userData }) {
                 </div>
                 <button
                   type="submit"
-                  className=" px-4 rounded-sm mb-1 ml-3 bg-[#316337] text-black border border-transparent hover:border-dotted hover:border-white"
+                  className=" px-4 rounded-sm mb-1 ml-3 bg-[#51AF30] text-black border border-transparent hover:border-dotted hover:border-white"
                 >
                   {userData?.links?.length > 1 ? "Update" : "Add"}
                 </button>
@@ -223,7 +223,7 @@ function EditChannelInfo({ userData }) {
                 </div>
                 <button
                   type="submit"
-                  className=" px-4 rounded-sm mb-1 ml-3 bg-[#316337] text-black border border-transparent hover:border-dotted hover:border-white"
+                  className=" px-4 rounded-sm mb-1 ml-3 bg-[#51AF30] text-black border border-transparent hover:border-dotted hover:border-white"
                 >
                   {userData?.links?.length > 1 ? "Update" : "Add"}
                 </button>

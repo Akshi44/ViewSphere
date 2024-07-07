@@ -34,11 +34,11 @@ function CommentLike({
         data-like-alt={like?.totalLikes + 1}
       >
         <span
-          className={`inline-block w-4 ${like?.isLiked ? "btn:text-[#316337]" : "btn:text-white"} `}
+          className={`inline-block w-4 ${like?.isLiked ? "btn:text-[#51AF30]" : "btn:text-white"} `}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill={like?.isLiked ? "#316337" : "none"}
+            fill={like?.isLiked ? "#51AF30" : "none"}
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
@@ -61,12 +61,12 @@ function CommentLike({
       >
         <span
           className={`inline-block w-4 ${
-            dislike?.isDisLiked ? "btn:text-[#316337]" : "btn:text-white"
+            dislike?.isDisLiked ? "btn:text-[#51AF30]" : "btn:text-white"
           } `}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill={dislike?.isDisLiked ? "#316337" : "none"}
+            fill={dislike?.isDisLiked ? "#51AF30" : "none"}
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"

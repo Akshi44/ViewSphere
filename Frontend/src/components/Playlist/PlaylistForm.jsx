@@ -136,7 +136,7 @@ function PlaylistForm({ playlist }, ref) {
                     <button
                       type="submit"
                       disabled={errors.name}
-                      className="bg-[#316337]  hover:bg-[#316337]/90 hover:border-dotted border border-white px-4 py-3 text-black disabled:bg-[#c7f2ce] disabled:cursor-not-allowed"
+                      className="bg-[#51AF30]  hover:bg-[#51AF30]/90 hover:border-dotted border border-white px-4 py-3 text-black disabled:bg-[#c7f2ce] disabled:cursor-not-allowed"
                     >
                       {playlist ? "Update" : "Create"}
                     </button>

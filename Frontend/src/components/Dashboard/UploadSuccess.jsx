@@ -44,7 +44,7 @@ function UploadSuccess({ video, updating = false }, ref) {
               </div>
               <div className="mb-6 flex gap-x-2 border p-3">
                 <div className="w-8 shrink-0">
-                  <span className="inline-block w-full rounded-full bg-[#c7f2ce] p-1 text-[#316337]">
+                  <span className="inline-block w-full rounded-full bg-[#c7f2ce] p-1 text-[#51AF30]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -75,7 +75,7 @@ function UploadSuccess({ video, updating = false }, ref) {
                     </p>
                   )}
                   <div className="mt-2 flex items-center">
-                    <span className="mr-2 inline-block w-6 text-[#316337]">
+                    <span className="mr-2 inline-block w-6 text-[#51AF30]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -99,7 +99,7 @@ function UploadSuccess({ video, updating = false }, ref) {
                 </button>
                 <button
                   onClick={() => dialog.current?.close()}
-                  className="bg-[#316337] px-4 py-3 text-black disabled:bg-[#c7f2ce]"
+                  className="bg-[#51AF30] px-4 py-3 text-black disabled:bg-[#c7f2ce]"
                 >
                   Finish
                 </button>

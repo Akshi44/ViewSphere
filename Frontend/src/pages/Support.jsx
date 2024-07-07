@@ -9,7 +9,7 @@ function Support() {
         <div className="flex relative top-20 justify-center p-4">
           <div className="w-full max-w-fit text-center">
             <p className="mb-3 w-full">
-              <span className="inline-flex w-36 h-36 rounded-full bg-[#c7f2ce] p-2 text-[#316337]">
+              <span className="inline-flex w-36 h-36 rounded-full bg-[#c7f2ce] p-2 text-[#51AF30]">
                 {icons.support}
               </span>
             </p>

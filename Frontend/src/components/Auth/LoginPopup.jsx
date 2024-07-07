@@ -130,7 +130,7 @@ function LoginPopup({ route, message = "Login to Continue..." }, ref) {
                   <Button
                     type="submit"
                     disabled={loading}
-                    className="grow bg-[#316337] hover:bg-[#316337]/90 hover:border-dotted border border-white text-black"
+                    className="grow bg-[#51AF30] hover:bg-[#51AF30]/90 hover:border-dotted border border-white text-black"
                   >
                     {loading ? <span>{icons.loading}</span> : "Sign in"}
                   </Button>
@@ -269,7 +269,7 @@ export default React.forwardRef(LoginPopup);
 //                   </Button>
 //                   <Button
 //                     type="submit"
-//                     className="grow bg-[#316337] hover:bg-[#316337]/90 hover:border-dotted border border-white text-black"
+//                     className="grow bg-[#51AF30] hover:bg-[#51AF30]/90 hover:border-dotted border border-white text-black"
 //                   >
 //                     Sign in
 //                   </Button>

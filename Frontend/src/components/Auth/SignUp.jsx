@@ -90,9 +90,9 @@ function SignUp() {
             required
             labelClassName="mt-4"
             placeholder="Enter your full name"
-            {...register("fullName", { required: true })}
+            {...register("fullname", { required: true })}
           />
-          {errors.fullName?.type === "required" && (
+          {errors.fullname?.type === "required" && (
             <span className="text-red-500 mt-1">*full name is required</span>
           )}
           <Input
@@ -141,7 +141,7 @@ function SignUp() {
           {errors.coverImage?.type === "validate" && (
             <span className="text-red-500 mt-1">Only .png & .jpg & .jpeg files are accepted</span>
           )}
-          <Button type="submit" disabled={loading} className="mt-5 disabled:cursor-not-allowed">
+          <Button type="submit" disabled={loading} className="mt-5 disabled:cursor-not-allowed rounded-l-xl rounded-r-xl">
             {loading ? <span>{icons.loading}</span> : "Sign Up"}
           </Button>
         </form>

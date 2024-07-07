@@ -17,7 +17,7 @@ function GuestComponent({
         <div className="w-full max-w-fit text-center">
           <p className="mb-3 w-full">
             {/* Icon */}
-            <span className="inline-flex w-36 h-36 rounded-full bg-[#c7f2ce] p-2 text-[#316337]">
+            <span className="inline-flex w-36 h-36 rounded-full bg-[#c7f2ce] p-2 text-[#51AF30]">
               {icon}
             </span>
           </p>
@@ -28,7 +28,7 @@ function GuestComponent({
               <LoginPopup ref={LoginPopupDialog} route={route || ""} />
               <button
                 onClick={() => LoginPopupDialog.current.open()}
-                className="mt-4 inline-flex items-center gap-x-2 bg-[#316337] hover:bg-[#316337]/95 hover:border-dotted border border-transparent hover:border-white px-3 py-2 font-semibold text-black"
+                className="mt-4 inline-flex items-center gap-x-2 bg-[#51AF30] hover:bg-[#51AF30]/95 hover:border-dotted border border-transparent hover:border-white px-3 py-2 font-semibold text-black"
               >
                 <span className="w-5">{icons.Login}</span>
                 Sign in

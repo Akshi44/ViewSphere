@@ -221,10 +221,10 @@ function AdminPanelVideos({ channelVideos = null }) {
         <div className="relative w-full max-w-lg  overflow-hidden">
           <input
             onChange={(e) => handleInputChange(e.target.value)}
-            className="w-full peer rounded-r-[20px] border focus:border-[#316337] bg-transparent py-1 pl-9 pr-3 placeholder-white outline-none sm:py-2"
+            className="w-full peer rounded-r-[20px] border focus:border-[#51AF30] bg-transparent py-1 pl-9 pr-3 placeholder-white outline-none sm:py-2"
             placeholder="Search"
           />
-          <span className="absolute peer-focus:text-[#316337] left-2.5 top-1/2 inline-block -translate-y-1/2">
+          <span className="absolute peer-focus:text-[#51AF30] left-2.5 top-1/2 inline-block -translate-y-1/2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

@@ -395,7 +395,7 @@ function VideoDetail() {
                                       handlePlaylistVideo(item._id, e.target.checked)
                                     }
                                   />
-                                  <span className="inline-flex h-4 w-4 items-center justify-center rounded-[4px] border border-transparent bg-white text-white group-hover/label:border-[#316337] peer-checked:border-[#316337] peer-checked:text-[#316337]">
+                                  <span className="inline-flex h-4 w-4 items-center justify-center rounded-[4px] border border-transparent bg-white text-white group-hover/label:border-[#51AF30] peer-checked:border-[#51AF30] peer-checked:text-[#51AF30]">
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
                                       fill="none"
@@ -431,11 +431,11 @@ function VideoDetail() {
                             id="playlist-name"
                             placeholder="Enter playlist name"
                             required
-                            className="w-full rounded-lg border border-transparent bg-white px-3 py-2 text-black outline-none focus:border-[#316337]"
+                            className="w-full rounded-lg border border-transparent bg-white px-3 py-2 text-black outline-none focus:border-[#51AF30]"
                           />
                           <button
                             type="submit"
-                            className="mx-auto mt-4 rounded-lg bg-[#316337] px-4 py-2 text-black"
+                            className="mx-auto mt-4 rounded-lg bg-[#51AF30] px-4 py-2 text-black"
                           >
                             Create new playlist
                           </button>
@@ -857,7 +857,7 @@ export default VideoDetail;
                       data-like="9506"
                       data-like-alt="3051"
                     >
-                      <span className="inline-block w-5 group-focus/btn:text-[#316337]">
+                      <span className="inline-block w-5 group-focus/btn:text-[#51AF30]">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -879,7 +879,7 @@ export default VideoDetail;
                       data-like="20"
                       data-like-alt="21"
                     >
-                      <span className="inline-block w-5 group-focus/btn:text-[#316337]">
+                      <span className="inline-block w-5 group-focus/btn:text-[#51AF30]">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"

@@ -60,7 +60,7 @@ function UploadingVideo({ video, abort, updating = false }, ref) {
               </div>
               <div className="mb-6 flex gap-x-2 border p-3">
                 <div className="w-8 shrink-0">
-                  <span className="inline-block w-full rounded-full bg-[#c7f2ce] p-1 text-[#316337]">
+                  <span className="inline-block w-full rounded-full bg-[#c7f2ce] p-1 text-[#51AF30]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -108,7 +108,7 @@ function UploadingVideo({ video, abort, updating = false }, ref) {
                   />
                   <button
                     onClick={() => confirmCancelDialog.current.open()}
-                    className="bg-[#316337] px-4 py-3 text-black disabled:bg-[#c7f2ce]"
+                    className="bg-[#51AF30] px-4 py-3 text-black disabled:bg-[#c7f2ce]"
                   >
                     Cancel Upload
                   </button>

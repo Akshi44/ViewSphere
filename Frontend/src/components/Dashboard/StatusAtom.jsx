@@ -4,7 +4,7 @@ function StatusAtom({ title, value, icon }) {
   return (
     <div className="border p-4">
       <div className="mb-4 block">
-        <span className="inline-block h-7 w-7 rounded-full bg-[#c7f2ce] p-1 text-[#316337]">
+        <span className="inline-block h-7 w-7 rounded-full bg-[#c7f2ce] p-1 text-[#51AF30]">
           {icon}
         </span>
       </div>

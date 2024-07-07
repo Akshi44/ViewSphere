@@ -13,7 +13,7 @@ const initialState = {
 export const login = createAsyncThunk("auth/login", async (data) => {
   try {
     const response = await axiosInstance.post("/users/login", data);
-    toast.success(response.data.message + " 🤩");
+    toast.success(response.data.message + " 😊");
     return response.data.data.user;
   } catch (error) {
     // toast.error(parseErrorMessage(error.response.data));
@@ -36,7 +36,7 @@ export const logout = createAsyncThunk("auth/logout", async () => {
 
 export const getCurrentUser = createAsyncThunk("auth/getCurrentUser", async () => {
   try {
-    const response = await axiosInstance.get("/users/get-current-user");
+    const response = await axiosInstance.get("/users/current-user");
     return response.data.data;
   } catch (error) {
     console.error("BACKEND_ERROR :: GET CURRENT USER");
@@ -65,7 +65,7 @@ export const changePassword = createAsyncThunk("auth/changePassword", async (dat
 
 export const updateProfile = createAsyncThunk("auth/updateProfile", async (data) => {
   try {
-    const response = await axiosInstance.patch("/users/update-profile", data, {
+    const response = await axiosInstance.patch("/users/update-account", data, {
       headers: {
         "Content-Type": "application/json",
       },

@@ -42,7 +42,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -63,7 +63,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -84,7 +84,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -105,7 +105,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -126,7 +126,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -147,7 +147,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -168,7 +168,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -189,7 +189,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -210,7 +210,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -231,7 +231,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -252,7 +252,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -273,7 +273,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -294,7 +294,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -315,7 +315,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -336,7 +336,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -357,7 +357,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -378,7 +378,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -399,7 +399,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -420,7 +420,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -441,7 +441,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -462,7 +462,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -483,7 +483,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -504,7 +504,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>
@@ -525,7 +525,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#316337]">
+          <button className="group/btn px-3 py-2 text-black bg-white focus:bg-[#51AF30]">
             <span className="group-focus/btn:hidden">Subscribe</span>
             <span className="hidden group-focus/btn:inline">Subscribed</span>
           </button>
@@ -546,7 +546,7 @@ function MyChannelSubscribed() {
           </div>
         </div>
         <div className="block">
-          <button className="group/btn px-3 py-2 text-black bg-[#316337] focus:bg-white">
+          <button className="group/btn px-3 py-2 text-black bg-[#51AF30] focus:bg-white">
             <span className="group-focus/btn:hidden">Subscribed</span>
             <span className="hidden group-focus/btn:inline">Subscribe</span>
           </button>

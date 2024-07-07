@@ -29,7 +29,7 @@ function History() {
           <div className="flex items-center justify-center py-2">
             <button
               onClick={deleteWatchHistory}
-              className="mt-4 rounded inline-flex items-center gap-x-2 bg-[#316337] hover:bg-[#316337]/95 border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
+              className="mt-4 rounded inline-flex items-center gap-x-2 bg-[#51AF30] hover:bg-[#51AF30]/95 border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
             >
               <span className="h-5">{icons.delete}</span>
               Clear History

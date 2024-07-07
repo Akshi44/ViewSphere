@@ -78,15 +78,15 @@ function Aside() {
     <aside className="group fixed inset-x-0 bottom-0 z-40 w-full shrink-0 border-t border-white bg-[#121212] px-2 py-2 sm:absolute sm:inset-y-0 sm:max-w-[70px] sm:border-r sm:border-t-0 sm:py-6 sm:hover:max-w-[250px] lg:sticky lg:max-w-[250px]">
       <ul className="flex justify-evenly gap-y-2 sm:sticky sm:top-[106px] sm:min-h-[calc(100vh-130px)] sm:flex-col">
         {NavElements?.map((item) => (
-          <li key={item.route} className={item.className + " /20"}>
+          <li key={item.route} className={item.className + " /20" }>
             <NavLink
               to={item.route}
               key={item.title}
               end
               className={({ isActive }) =>
                 `${
-                  isActive && "text-[#316337] sm:bg-[#316337] sm:text-black"
-                } flex flex-col items-center justify-center border-white py-1 focus:text-[#316337] sm:w-full sm:flex-row sm:border sm:p-1.5 sm:hover:bg-[#316337] sm:hover:text-white sm:focus:border-[#316337] sm:focus:bg-[#316337] sm:focus:text-black sm:group-hover:justify-start sm:group-hover:px-4 lg:justify-start lg:px-4`
+                  isActive && "text-[#51AF30] sm:bg-[#51AF30] sm:text-black"
+                } flex flex-col items-center justify-center border-white py-1 focus:text-[#51AF30] sm:w-full sm:flex-row sm:border sm:p-1.5 sm:hover:bg-[#51AF30] sm:hover:text-white sm:focus:border-[#51AF30] sm:focus:bg-[#51AF30] sm:focus:text-black sm:group-hover:justify-start sm:group-hover:px-4 lg:justify-start lg:px-4 rounded-l-xl rounded-r-xl`
               }
             >
               <span className="inline-block w-8 h-8 sm:h-5 sm:w-5 justify-center items-center shrink-0 sm:group-hover:mr-4 lg:mr-4">

@@ -27,7 +27,7 @@ function TweetLike({ isLikedInitially, tweetId, totalLikes }) {
           strokeWidth="1.5"
           stroke="currentColor"
           aria-hidden="true"
-          className={`h-5 w-5 ${like?.isLiked ? "text-[#316337]" : "text-white"}`}
+          className={`h-5 w-5 ${like?.isLiked ? "text-[#51AF30]" : "text-white"}`}
         >
           <path
             strokeLinecap="round"
@@ -48,7 +48,7 @@ function TweetLike({ isLikedInitially, tweetId, totalLikes }) {
           strokeWidth="1.5"
           stroke="currentColor"
           aria-hidden="true"
-          className="h-5 w-5 text-inherit group-focus:text-[#316337]"
+          className="h-5 w-5 text-inherit group-focus:text-[#51AF30]"
         >
           <path
             strokeLinecap="round"

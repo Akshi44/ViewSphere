@@ -167,7 +167,7 @@ function VideoView({ videos = [], loading = true, fetching = false }) {
                             className="h-full w-full rounded-full"
                           />
                         </div>
-                        <p className="text-sm text-gray-200">{video.owner?.fullName}</p>
+                        <p className="text-sm text-gray-200">{video.owner?.fullname}</p>
                       </div>
                       <p className="mt-2 hidden text-sm md:block">
                         {video.description.substr(0, 170) +

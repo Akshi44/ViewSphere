@@ -74,7 +74,7 @@ function Login() {
           {errors.password?.type === "required" && (
             <span className="text-red-500 mt-1">*password is required</span>
           )}
-          <Button type="submit" disabled={loading} className="mt-5 disabled:cursor-not-allowed">
+          <Button type="submit" disabled={loading} className="mt-5 disabled:cursor-not-allowed rounded-l-xl rounded-r-xl">
             {loading ? <span>{icons.loading}</span> : "Sign in"}
           </Button>
         </form>

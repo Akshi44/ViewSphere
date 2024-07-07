@@ -99,7 +99,7 @@ function ChannelSubscribed({ owner = false, isSubscribers = false }) {
     if (!input) setSubscribedFiltered(data);
     else {
       const filteredData = data.filter((user) =>
-        user.fullName.toLowerCase().includes(input.toLowerCase())
+        user.fullname.toLowerCase().includes(input.toLowerCase())
       );
       setSubscribedFiltered(filteredData);
     }

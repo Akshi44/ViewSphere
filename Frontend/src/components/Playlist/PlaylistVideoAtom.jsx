@@ -41,7 +41,7 @@ function PlaylistVideoAtom({ video, playlistId, owner = false }) {
           <div className="h-10 w-10 shrink-0 sm:hidden">
             <img
               src={video.owner?.avatar}
-              alt={video.owner?.fullName}
+              alt={video.owner?.fullname}
               className="h-full w-full rounded-full"
             />
           </div>
@@ -59,13 +59,13 @@ function PlaylistVideoAtom({ video, playlistId, owner = false }) {
                 <Link to={`/user/${video.owner?.username}`}>
                   <img
                     src={video.owner?.avatar}
-                    alt={video.owner?.fullName}
+                    alt={video.owner?.fullname}
                     className="h-full w-full rounded-full"
                   />
                 </Link>
               </div>
               <p className="text-sm hover:text-gray-300 text-gray-200">
-                <Link to={`/user/${video.owner?.username}`}>{video.owner?.fullName}</Link>
+                <Link to={`/user/${video.owner?.username}`}>{video.owner?.fullname}</Link>
               </p>
             </div>
           </div>

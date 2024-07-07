@@ -111,7 +111,7 @@ function ConfirmPopup(
                       type="submit"
                       disabled={checkbox && !isChecked}
                       className={`${
-                        critical ? "bg-[#212121] text-red-500" : "bg-[#316337] text-white"
+                        critical ? "bg-[#212121] text-red-500" : "bg-[#51AF30] text-white"
                       } px-4 py-3 border enabled:hover:text-black enabled:hover:bg-red-500/80 font-semibold hover:border-dashed disabled:cursor-not-allowed`}
                     >
                       {confirm}

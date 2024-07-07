@@ -58,7 +58,7 @@ function CommentAtom({ comment, videoId, ownerAvatar = "" }) {
         {/* Content */}
         <div className="block w-full">
           <p className="flex items-center text-gray-200 text-xs">
-            {comment.owner?.fullName} · {" "}
+            {comment.owner?.fullname} · {" "}
             <span className="text-xs">{formatTimestamp(comment.createdAt)}</span>
           </p>
           <p className="text-xs text-gray-200">
@@ -71,7 +71,7 @@ function CommentAtom({ comment, videoId, ownerAvatar = "" }) {
               name="content"
               onChange={(e) => setContent(e.target.value)}
               disabled={!comment.isOwner || !isEditing}
-              className=" w-[70%] bg-transparent outline-none border-b-[1px] border-transparent enabled:border-[#316337] focus:border-[#316337]"
+              className=" w-[70%] bg-transparent outline-none border-b-[1px] border-transparent enabled:border-[#51AF30] focus:border-[#51AF30]"
               value={content}
             />
           </p>
@@ -137,7 +137,7 @@ function CommentAtom({ comment, videoId, ownerAvatar = "" }) {
                 isEditing ? handleUpdate() : handleEditing();
               }}
               disabled={isEditing ? comment.content === content || !content.trim() : false}
-              className="rounded-3xl pt-0 bg-[#316337] disabled:bg-gray-800 disabled:text-white disabled:cursor-not-allowed hover:bg-[#b48ef1] text-sm text-black font-semibold border border-b-white px-2 pb-1"
+              className="rounded-3xl pt-0 bg-[#51AF30] disabled:bg-gray-800 disabled:text-white disabled:cursor-not-allowed hover:bg-[#b48ef1] text-sm text-black font-semibold border border-b-white px-2 pb-1"
             >
               {isEditing ? "Update" : "Edit"}
             </Button>

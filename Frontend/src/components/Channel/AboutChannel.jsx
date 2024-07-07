@@ -114,7 +114,7 @@ const AboutChannel = ({ owner = false }) => {
             href={`/user/${aboutChannel.username}`}
             className="text-blue-500 hover:text-blue-400 transition-colors"
           >
-            {`https/playtube/user/${aboutChannel.username}`}
+            {`https/viewsphere/user/${aboutChannel.username}`}
           </a>
         </p>
         <p className="ml-1 mb-[6px]">

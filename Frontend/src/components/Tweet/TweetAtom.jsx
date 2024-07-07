@@ -61,7 +61,7 @@ function TweetAtom({ tweet, owner, authStatus }) {
           <h4 className="mb-1 flex items-center gap-x-2">
             <span className="font-semibold">
               <Link to={`${owner ? "" : "/user/" + tweet.owner?.username}`}>
-                {tweet.owner?.fullName}
+                {tweet.owner?.fullname}
               </Link>
             </span>
              
@@ -78,7 +78,7 @@ function TweetAtom({ tweet, owner, authStatus }) {
                 name="tweet"
                 onChange={(e) => setContent(e.target.value)}
                 disabled={!owner || !isEditing}
-                className=" w-full bg-transparent outline-none border-b-[1px] border-transparent enabled:border-[#316337] focus:border-[#316337]"
+                className=" w-full bg-transparent outline-none border-b-[1px] border-transparent enabled:border-[#51AF30] focus:border-[#51AF30]"
                 value={content}
               />
             )}
@@ -116,7 +116,7 @@ function TweetAtom({ tweet, owner, authStatus }) {
                   isEditing ? handleUpdate() : handleEditing();
                 }}
                 disabled={isEditing ? tweet.content === content || !content.trim() : false}
-                className="rounded-3xl pt-0 bg-[#316337] disabled:bg-gray-800 disabled:text-white disabled:cursor-not-allowed hover:bg-[#b48ef1] text-sm text-black font-semibold border border-b-white px-2 pb-1"
+                className="rounded-3xl pt-0 bg-[#51AF30] disabled:bg-gray-800 disabled:text-white disabled:cursor-not-allowed hover:bg-[#b48ef1] text-sm text-black font-semibold border border-b-white px-2 pb-1"
               >
                 {isEditing ? "Update" : "Edit"}
               </Button>
