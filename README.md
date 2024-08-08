@@ -57,6 +57,7 @@ JWT_SECRET=your_jwt_secret</code></pre> -->
     <li><strong>Like/Dislike Video:</strong> Users can like or dislike videos.</li>
     <li><strong>Comment/Reply:</strong> Users can comment on and reply to comments on videos.</li>
     <li><strong>Subscribe/Unsubscribe:</strong> Users can subscribe to or unsubscribe from channels.</li>
+    <li><strong>Tweet:</strong> Users can tweet their thoughts and share them with their followers.</li>
   </ul>
 
   <h2>Contact</h2>
