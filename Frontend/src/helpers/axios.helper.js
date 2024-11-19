@@ -10,3 +10,6 @@ export const axiosInstance = axios.create({
 });
 
 // loadProgressBar({}, axiosInstance);
+
+// https://viewsphere.onrender.com/api/v1
+// http://localhost:8000/api/v1

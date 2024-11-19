@@ -11,10 +11,10 @@ const initialState = {
 export const healthCheck = createAsyncThunk("health/healthCheck", async () => {
   try {
     const response = await axiosInstance.get(`/healthcheck`);
-    // toast.success("⚙️ Server is Healthy... ❤️", { icon: "🚀" });
+    toast.success("⚙️ Server is Healthy 🚀", { icon: "🚀" });
     return response.data.data;
   } catch (error) {
-    toast.error("Oops! Our Server is Sick... 🤒");
+    toast.error("Oops! Our Server is Sick");
     console.log(error);
   }
 });
